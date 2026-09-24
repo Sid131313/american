@@ -98,6 +98,15 @@ The hero remains covered by the original 2880 x 1024 combined comparison. The st
 - Verified at 1440 x 1024 and 390 x 844. The corrected captures are `qa/fix-after-hero-desktop.png`, `qa/fix-after-hero-mobile.png`, `qa/fix-after-koza-desktop.png`, and `qa/fix-after-koza-mobile.png`.
 - Browser checks report no console errors and no horizontal overflow.
 
+### Mobile Vertical Rhythm Pass
+
+- Rechecked the complete page at 320 x 700, 390 x 844, 430 x 932, and 480 x 900.
+- Replaced the phone hero's viewport-height behavior with a width-aware 650-705 px range, moved the art closer to the CTA, and capped its size on wider phones.
+- At 390 px, the hero is now 660 px instead of 770 px and the measured CTA-to-art gap is approximately 14 px instead of 80 px.
+- Reduced mobile story panels from 760-780 px to a 700 px baseline, the flavor section from 760 px to 620 px, and the footer from 919 px to 835 px.
+- The 320 px story panels can still grow to fit their copy. No text or image collisions, horizontal overflow, or console errors were found.
+- Mobile navigation still opens and closes correctly while keeping `aria-expanded` synchronized.
+
 ## Follow-up Polish
 
 - P3: the reference footer includes a faint decorative line pattern; the implementation keeps the footer field solid to preserve the Burger Motel palette and avoid introducing unrelated artwork.
