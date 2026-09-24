@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Burger Motel — большие бургеры, громкие вкусы и американская классика."
+    />
+    <title>Burger Motel — американская бургерная</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#hero">Перейти к содержимому</a>
+
+    <header class="site-header" data-header>
+      <div class="site-header__inner">
+        <nav class="site-header__nav site-header__nav--left" aria-label="Основная навигация">
+          <a href="#menu" data-coming-soon="Меню">Меню</a>
+          <a href="#about">О нас</a>
+        </nav>
+
+        <button
+          class="mobile-menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          Меню
+        </button>
+
+        <a class="brand" href="#hero" aria-label="Burger Motel, на главную">
+          <span>Burger</span>
+          <span>Motel</span>
+        </a>
+
+        <nav class="site-header__nav site-header__nav--right" aria-label="Дополнительная навигация">
+          <a href="#locations" data-coming-soon="Адреса">Адреса</a>
+          <a class="order-button" href="#order" data-coming-soon="Онлайн-заказ">Заказать</a>
+        </nav>
+
+        <a class="order-button order-button--mobile" href="#order" data-coming-soon="Онлайн-заказ">
+          Заказать
+        </a>
+      </div>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu>
+        <a href="#menu" data-coming-soon="Меню">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#locations" data-coming-soon="Адреса">Адреса</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title" data-hero>
+        <div class="hero__copy">
+          <p class="hero__eyebrow">Американская бургерная</p>
+          <h1 class="hero__title" id="hero-title">
+            <span>Burger</span>
+            <span>Motel</span>
+          </h1>
+          <p class="hero__tagline">Большие бургеры.<br />Громкие вкусы.<br />Всегда по пути.</p>
+          <a class="hero__cta" href="#menu" data-coming-soon="Меню">Смотреть меню</a>
+        </div>
+
+        <img
+          class="hero__art hero__art--left"
+          src="assets/images/hero1.png"
+          alt=""
+          width="1224"
+          height="1289"
+          fetchpriority="high"
+          data-hero-art
+        />
+        <img
+          class="hero__art hero__art--right"
+          src="assets/images/hero2.png"
+          alt=""
+          width="1304"
+          height="1211"
+          fetchpriority="high"
+          data-hero-art
+        />
+
+        <div class="hero__next-band" aria-hidden="true"></div>
+      </section>
+
+      <section class="story" id="about" aria-label="О Burger Motel">
+        <article class="story-panel story-panel--red" data-scroll-scene>
+          <div class="story-panel__inner">
+            <div class="story-panel__visual" aria-hidden="true">
+              <img
+                class="story-panel__hand story-panel__hand--burger"
+                src="assets/images/burger.png"
+                alt=""
+                width="1195"
+                height="1316"
+                loading="lazy"
+                data-scroll-lift
+                data-lift-from="190"
+                data-lift-distance="310"
+              />
+            </div>
+
+            <div class="story-panel__copy">
+              <p class="story-panel__eyebrow">Без коротких путей</p>
+              <h2>Бургеры, ради которых стоит свернуть с трассы.</h2>
+              <p>
+                Каждое утро начинаем с чистого листа: режем овощи, жарим котлеты,
+                смешиваем соусы и собираем каждый бургер только после заказа.
+                Всё горячее, свежее и по-честному.
+              </p>
+              <a class="story-panel__link" href="#community">
+                <span class="story-panel__link-icon" aria-hidden="true">
+                  <img
+                    class="story-panel__arrow story-panel__arrow--current"
+                    src="assets/icons/arrow-right.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    class="story-panel__arrow story-panel__arrow--next"
+                    src="assets/icons/arrow-right.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                </span>
+                <span>Наша история</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-panel story-panel--green" id="community" data-scroll-scene>
+          <div class="story-panel__inner">
+            <div class="story-panel__visual" aria-hidden="true">
+              <img
+                class="story-panel__hand story-panel__hand--koza"
+                src="assets/images/koza.png"
+                alt=""
+                width="1086"
+                height="1448"
+                loading="lazy"
+                data-scroll-lift
+                data-lift-from="210"
+                data-lift-distance="300"
+              />
+            </div>
+
+            <div class="story-panel__copy">
+              <p class="story-panel__eyebrow">Свои люди</p>
+              <h2>Это больше чем еда. Это своя компания.</h2>
+              <p>
+                Burger Motel — место для тех, кто любит громкую музыку, большие
+                порции и встречи без повода. Заезжай один или всей компанией —
+                свободный стол и горячий гриль найдутся.
+              </p>
+              <a class="story-panel__link" href="#locations" data-coming-soon="Адреса">
+                <span class="story-panel__link-icon" aria-hidden="true">
+                  <img
+                    class="story-panel__arrow story-panel__arrow--current"
+                    src="assets/icons/arrow-right.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                  <img
+                    class="story-panel__arrow story-panel__arrow--next"
+                    src="assets/icons/arrow-right.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                </span>
+                <span>Найти свой Motel</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="flavor" id="crew" aria-labelledby="flavor-title" data-scroll-scene>
+        <div class="flavor__bubbles" aria-hidden="true">
+          <span
+            class="flavor-bubble flavor-bubble--one"
+            data-scroll-lift
+            data-lift-from="210"
+            data-lift-distance="350"
+          >
+            <img
+              src="assets/images/burger.png"
+              alt=""
+              width="1195"
+              height="1316"
+              loading="lazy"
+            />
+          </span>
+          <span
+            class="flavor-bubble flavor-bubble--two"
+            data-scroll-lift
+            data-lift-from="170"
+            data-lift-distance="280"
+          >
+            <img
+              src="assets/images/fries.png"
+              alt=""
+              width="1254"
+              height="1254"
+              loading="lazy"
+            />
+          </span>
+          <span
+            class="flavor-bubble flavor-bubble--three"
+            data-scroll-lift
+            data-lift-from="240"
+            data-lift-distance="390"
+          >
+            <img
+              src="assets/images/burger.png"
+              alt=""
+              width="1195"
+              height="1316"
+              loading="lazy"
+            />
+          </span>
+          <span
+            class="flavor-bubble flavor-bubble--four"
+            data-scroll-lift
+            data-lift-from="190"
+            data-lift-distance="320"
+          >
+            <img
+              src="assets/images/fries.png"
+              alt=""
+              width="1254"
+              height="1254"
+              loading="lazy"
+            />
+          </span>
+          <span
+            class="flavor-bubble flavor-bubble--five"
+            data-scroll-lift
+            data-lift-from="160"
+            data-lift-distance="270"
+          >
+            <img
+              src="assets/images/burger.png"
+              alt=""
+              width="1195"
+              height="1316"
+              loading="lazy"
+            />
+          </span>
+        </div>
+
+        <div class="flavor__inner">
+          <h2 class="flavor__title" id="flavor-title">
+            <span>Местные дилеры</span>
+            <span>большого вкуса</span>
+          </h2>
+          <p class="flavor__copy">
+            Мы не просто сеть — мы команда на полной мощности. Без натянутых улыбок,
+            зато с характером. В каждом заказе — энергия тех, кто собирает его для тебя.
+          </p>
+          <a class="story-panel__link flavor__link" href="#team" data-coming-soon="Команда">
+            <span class="story-panel__link-icon" aria-hidden="true">
+              <img
+                class="story-panel__arrow story-panel__arrow--current"
+                src="assets/icons/arrow-right.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+              <img
+                class="story-panel__arrow story-panel__arrow--next"
+                src="assets/icons/arrow-right.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Наша команда</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="promos" aria-label="Предложения Burger Motel">
+        <div class="promos__grid">
+          <a class="promo-card promo-card--combo" href="#menu" data-coming-soon="Меню">
+            <span class="promo-card__arrow story-panel__link-icon" aria-hidden="true">
+              <img
+                class="story-panel__arrow story-panel__arrow--current"
+                src="assets/icons/arrow-right.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+              <img
+                class="story-panel__arrow story-panel__arrow--next"
+                src="assets/icons/arrow-right.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </span>
+            <span class="promo-card__copy">
+              <span class="promo-card__eyebrow">Комбо без компромиссов</span>
+              <span class="promo-card__title">Выбери свой набор</span>
+              <span class="promo-card__text">Для тех, кто точно знает, чего хочет.</span>
+            </span>
+            <img
+              class="promo-card__image promo-card__image--combo"
+              src="assets/images/kola.png"
+              alt="Два бургера и банка колы"
+              width="1122"
+              height="1402"
+              loading="lazy"
+            />
+          </a>
+
+          <a class="promo-card promo-card--tramp" href="#order" data-coming-soon="Онлайн-заказ">
+            <span class="promo-card__arrow story-panel__link-icon" aria-hidden="true">
+              <img
+                class="story-panel__arrow story-panel__arrow--current"
+                src="assets/icons/arrow-right.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+              <img
+                class="story-panel__arrow story-panel__arrow--next"
+                src="assets/icons/arrow-right.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </span>
+            <span class="promo-card__copy">
+              <span class="promo-card__eyebrow">Большой американский вкус</span>
+              <span class="promo-card__title">Сделаем бургеры великими снова</span>
+              <span class="promo-card__text">Большая порция. Большой жест. Никаких компромиссов.</span>
+            </span>
+            <img
+              class="promo-card__image promo-card__image--tramp"
+              src="assets/images/tramp.png"
+              alt="Мужчина в синем костюме с банкой колы"
+              width="1254"
+              height="1254"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__lead">
+          <a class="site-footer__brand" href="#hero" aria-label="Burger Motel, наверх">
+            <span>Burger</span>
+            <span>Motel</span>
+          </a>
+          <p>Большие бургеры.<br />Громкие вкусы.<br />Всегда по пути.</p>
+          <a class="site-footer__order" href="#order" data-coming-soon="Онлайн-заказ">
+            Заказать
+            <span class="site-footer__order-arrow" aria-hidden="true">
+              <img src="assets/icons/arrow-right.svg" alt="" width="24" height="24" />
+            </span>
+          </a>
+        </div>
+
+        <div class="site-footer__nav" aria-label="Навигация в подвале">
+          <div class="site-footer__column">
+            <p class="site-footer__heading">Навигация</p>
+            <a href="#menu" data-coming-soon="Меню">Меню</a>
+            <a href="#about">О нас</a>
+            <a href="#crew">Команда</a>
+            <a href="#locations" data-coming-soon="Адреса">Адреса</a>
+          </div>
+          <div class="site-footer__column">
+            <p class="site-footer__heading">Burger Motel</p>
+            <a href="#franchise" data-coming-soon="Франшиза">Франшиза</a>
+            <a href="#jobs" data-coming-soon="Вакансии">Вакансии</a>
+            <a href="#contact" data-coming-soon="Контакты">Написать нам</a>
+            <a href="#newsletter" data-coming-soon="Рассылка">Рассылка</a>
+          </div>
+          <div class="site-footer__column">
+            <p class="site-footer__heading">Мы в сети</p>
+            <a href="#instagram" data-coming-soon="Instagram">Instagram</a>
+            <a href="#vk" data-coming-soon="VK">VK</a>
+            <a href="#telegram" data-coming-soon="Telegram">Telegram</a>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p>© Burger Motel 2026</p>
+          <div>
+            <a href="#privacy" data-coming-soon="Политика конфиденциальности">Конфиденциальность</a>
+            <a href="#terms" data-coming-soon="Правила сервиса">Правила сервиса</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="notice" data-notice>
+      <button class="notice__close" type="button" aria-label="Закрыть" data-notice-close>Закрыть</button>
+      <p class="notice__eyebrow">Burger Motel</p>
+      <h2 data-notice-title>Скоро здесь</h2>
+      <p>Этот раздел появится на следующем этапе сборки сайта.</p>
+    </dialog>
+  </body>
+</html>
